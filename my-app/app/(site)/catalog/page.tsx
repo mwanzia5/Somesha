@@ -37,7 +37,7 @@ export default function CatalogPage() {
     catalog.filter((entry) => entry.level === level).length;
 
   return (
-    <div className="mx-auto w-full max-w-[1600px] px-6 py-10 md:px-10 xl:px-14">
+    <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-10">
       <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="flex flex-col gap-1">
           <h1 className="text-h1 text-paper">All Courses</h1>

@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, type ReactNode } from "react";
-import { Badge, Chip, ProgressBar, Tabs } from "./components/data-display";
-import { Button } from "./components/button";
-import { Checkbox, Input, Radio, Select } from "./components/form";
-import { CourseCard, SearchResultCard } from "./components/cards";
-import { Logo } from "./components/logo";
-import { SearchBar } from "./components/search-bar";
-import { SidebarNav, TopNav } from "./components/nav";
-import { EmptyState, VideoPlayer } from "./components/video";
+import { Badge, Chip, ProgressBar, Tabs } from "@/app/components/data-display";
+import { Button } from "@/app/components/button";
+import { Checkbox, Input, Radio, Select } from "@/app/components/form";
+import { CourseCard, SearchResultCard } from "@/app/components/cards";
+import { Logo } from "@/app/components/logo";
+import { SearchBar } from "@/app/components/search-bar";
+import { SidebarNav, TopNav } from "@/app/components/nav";
+import { EmptyState, VideoPlayer } from "@/app/components/video";
 import {
   ArrowRightIcon,
   BellIcon,
@@ -27,7 +27,7 @@ import {
   TargetIcon,
   UsersIcon,
   ZapIcon,
-} from "./components/icons";
+} from "@/app/components/icons";
 
 function SectionLabel({ children }: { children: string }) {
   return (

@@ -19,7 +19,7 @@ export function TopNav({ active }: { active?: string }) {
   ];
   return (
     <nav className="flex w-full items-center justify-between rounded-2xl border border-edge bg-ink-soft px-5 py-3.5">
-      <Link href="/home" aria-label="Somesha home">
+      <Link href="/" aria-label="Somesha home">
         <Logo size="sm" />
       </Link>
       <div className="flex items-center gap-6">

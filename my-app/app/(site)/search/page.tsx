@@ -257,7 +257,7 @@ export default function SearchPage() {
   return (
     <Suspense
       fallback={
-        <div className="mx-auto w-full max-w-[1600px] px-6 py-10 md:px-10 xl:px-14">
+<div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-10">
           <p className="text-body text-muted">Searching…</p>
         </div>
       }
