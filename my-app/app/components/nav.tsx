@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
 import Link from "next/link";
+import { SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import { Logo } from "./logo";
 import {
   BookIcon,
@@ -37,13 +38,29 @@ export function TopNav({ active }: { active?: string }) {
           </Link>
         ))}
       </div>
-      <button
-        type="button"
-        aria-label="Sign in"
-        className="rounded-full bg-primary px-4 py-2 text-caption font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
-      >
-        Sign in
-      </button>
+      <div className="flex items-center gap-3">
+        <Show when="signed-out">
+          <SignInButton>
+            <button
+              type="button"
+              className="rounded-full bg-primary px-4 py-2 text-caption font-semibold text-primary-foreground transition-colors hover:bg-primary-hover"
+            >
+              Sign in
+            </button>
+          </SignInButton>
+          <SignUpButton>
+            <button
+              type="button"
+              className="rounded-full border border-edge px-4 py-2 text-caption font-semibold text-paper transition-colors hover:border-primary hover:text-primary"
+            >
+              Sign up
+            </button>
+          </SignUpButton>
+        </Show>
+        <Show when="signed-in">
+          <UserButton />
+        </Show>
+      </div>
     </nav>
   );
 }
