@@ -1,0 +1,6 @@
+# Local agent tooling
+.claude/
+.gemini/
+.jolli/
+.cursor/
+.opencode/
